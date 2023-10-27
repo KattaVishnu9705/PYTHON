@@ -1,0 +1,10 @@
+names = input("Enter a list of names, separated by commas: ").split(",")
+order = input("Sort in Ascending (A) or Descending (D) order? ").upper()
+if order not in ["A", "D"]:
+    print("Invalid choice.")
+else:
+    if order == "A":
+        names.sort()
+    else:
+        names.sort(reverse=True)
+print("The sorted list of names is:", names)
